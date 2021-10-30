@@ -1,0 +1,456 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1635600115309)
++++ .idea/compiler.xml	(date 1635600115309)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="TestdemoJenkin" />
++      </profile>
++    </annotationProcessing>
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(date 1635598961157)
++++ pom.xml	(date 1635598961157)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>TestdemoJenkin</artifactId>
++    <version>1.0-SNAPSHOT</version>
++    <dependencies>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>RELEASE</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.gitignore	(date 1635597096743)
++++ .idea/.gitignore	(date 1635597096743)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: junit_file_commit.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- junit_file_commit.patch	(date 1635599630833)
++++ junit_file_commit.patch	(date 1635599630833)
+@@ -0,0 +1,183 @@
++Index: TestdemoJenkin/.idea/compiler.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/.idea/compiler.xml	(date 1635597160227)
+++++ TestdemoJenkin/.idea/compiler.xml	(date 1635597160227)
++@@ -0,0 +1,13 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="CompilerConfiguration">
+++    <annotationProcessing>
+++      <profile name="Maven default annotation processors profile" enabled="true">
+++        <sourceOutputDir name="target/generated-sources/annotations" />
+++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+++        <outputRelativeToContentRoot value="true" />
+++        <module name="TestdemoJenkin" />
+++      </profile>
+++    </annotationProcessing>
+++  </component>
+++</project>
++\ No newline at end of file
++Index: TestdemoJenkin/.idea/vcs.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/.idea/vcs.xml	(date 1635597091915)
+++++ TestdemoJenkin/.idea/vcs.xml	(date 1635597091915)
++@@ -0,0 +1,6 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="VcsDirectoryMappings">
+++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+++  </component>
+++</project>
++\ No newline at end of file
++Index: TestdemoJenkin/.idea/misc.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/.idea/misc.xml	(date 1635597091899)
+++++ TestdemoJenkin/.idea/misc.xml	(date 1635597091899)
++@@ -0,0 +1,14 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="ExternalStorageConfigurationManager" enabled="true" />
+++  <component name="MavenProjectsManager">
+++    <option name="originalFiles">
+++      <list>
+++        <option value="$PROJECT_DIR$/pom.xml" />
+++      </list>
+++    </option>
+++  </component>
+++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+++    <output url="file://$PROJECT_DIR$/out" />
+++  </component>
+++</project>
++\ No newline at end of file
++Index: TestdemoJenkin/TestdemoJenkin.iml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/TestdemoJenkin.iml	(date 1635597160086)
+++++ TestdemoJenkin/TestdemoJenkin.iml	(date 1635597160086)
++@@ -0,0 +1,2 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<module type="JAVA_MODULE" version="4" />
++\ No newline at end of file
++Index: TestdemoJenkin/pom.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/pom.xml	(date 1635598961157)
+++++ TestdemoJenkin/pom.xml	(date 1635598961157)
++@@ -0,0 +1,20 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project xmlns="http://maven.apache.org/POM/4.0.0"
+++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+++    <modelVersion>4.0.0</modelVersion>
+++
+++    <groupId>org.example</groupId>
+++    <artifactId>TestdemoJenkin</artifactId>
+++    <version>1.0-SNAPSHOT</version>
+++    <dependencies>
+++        <dependency>
+++            <groupId>junit</groupId>
+++            <artifactId>junit</artifactId>
+++            <version>RELEASE</version>
+++            <scope>test</scope>
+++        </dependency>
+++    </dependencies>
+++
+++
+++</project>
++\ No newline at end of file
++Index: TestdemoJenkin/src/test/java/AdditionTest.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/src/test/java/AdditionTest.java	(date 1635599482796)
+++++ TestdemoJenkin/src/test/java/AdditionTest.java	(date 1635599482796)
++@@ -0,0 +1,15 @@
+++public class AdditionTest {
+++
+++    @org.junit.Test
+++    public void add() {
+++        int result=Addition.add(6,4);
+++        int correct= 10;
+++        if (!equals(10, result)) throw new AssertionError();
+++    }
+++
+++    private boolean equals(int i, int result) {
+++        return true;
+++    }
+++
+++
+++}
++\ No newline at end of file
++Index: TestdemoJenkin/.idea/.gitignore
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/.idea/.gitignore	(date 1635597096743)
+++++ TestdemoJenkin/.idea/.gitignore	(date 1635597096743)
++@@ -0,0 +1,8 @@
+++# Default ignored files
+++/shelf/
+++/workspace.xml
+++# Datasource local storage ignored files
+++/dataSources/
+++/dataSources.local.xml
+++# Editor-based HTTP Client requests
+++/httpRequests/
++Index: TestdemoJenkin/src/test/java/Addition.java
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/src/test/java/Addition.java	(date 1635597369292)
+++++ TestdemoJenkin/src/test/java/Addition.java	(date 1635597369292)
++@@ -0,0 +1,6 @@
+++public class Addition {
+++    public static int add(int number1, int number2)
+++    {
+++        return number1+number2;
+++    }
+++}
++Index: TestdemoJenkin/.idea/jarRepositories.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- TestdemoJenkin/.idea/jarRepositories.xml	(date 1635597160461)
+++++ TestdemoJenkin/.idea/jarRepositories.xml	(date 1635597160461)
++@@ -0,0 +1,20 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="RemoteRepositoriesConfiguration">
+++    <remote-repository>
+++      <option name="id" value="central" />
+++      <option name="name" value="Central Repository" />
+++      <option name="url" value="https://repo.maven.apache.org/maven2" />
+++    </remote-repository>
+++    <remote-repository>
+++      <option name="id" value="central" />
+++      <option name="name" value="Maven Central repository" />
+++      <option name="url" value="https://repo1.maven.org/maven2" />
+++    </remote-repository>
+++    <remote-repository>
+++      <option name="id" value="jboss.community" />
+++      <option name="name" value="JBoss Community repository" />
+++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+++    </remote-repository>
+++  </component>
+++</project>
++\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1635599883489)
++++ .idea/vcs.xml	(date 1635599883489)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++    <mapping directory="$PROJECT_DIR$/src/main/java" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1635597091899)
++++ .idea/misc.xml	(date 1635597091899)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: TestdemoJenkin.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin.iml	(date 1635597160086)
++++ TestdemoJenkin.iml	(date 1635597160086)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: src/main/java/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/.idea/workspace.xml	(revision 1c17d09a5e2e2be30918089a0ae219062cbecba2)
++++ src/main/java/.idea/workspace.xml	(date 1635599947556)
+@@ -1,5 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="BranchesTreeState">
++    <expand />
++    <select />
++  </component>
+   <component name="ChangeListManager">
+     <list default="true" id="1c00cf33-f415-400d-b191-1a03aa2a749b" name="Default Changelist" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -20,6 +24,7 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+   </component>
+   <component name="SvnConfiguration">
+@@ -33,13 +38,29 @@
+       <option name="presentableId" value="Default" />
+       <updated>1635054101357</updated>
+       <workItem from="1635054102976" duration="65000" />
++      <workItem from="1635599897861" duration="49000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="2" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="WindowStateProjectService">
++    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1635599947529">
++      <screen x="0" y="0" width="1366" height="728" />
++    </state>
++    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1635599947529" />
+     <state x="65" y="24" key="new project wizard" timestamp="1635054179536">
+       <screen x="0" y="0" width="1366" height="728" />
+     </state>
+Index: src/test/java/AdditionTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/AdditionTest.java	(date 1635599482796)
++++ src/test/java/AdditionTest.java	(date 1635599482796)
+@@ -0,0 +1,15 @@
++public class AdditionTest {
++
++    @org.junit.Test
++    public void add() {
++        int result=Addition.add(6,4);
++        int correct= 10;
++        if (!equals(10, result)) throw new AssertionError();
++    }
++
++    private boolean equals(int i, int result) {
++        return true;
++    }
++
++
++}
+\ No newline at end of file
+Index: src/test/java/Addition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/Addition.java	(date 1635597369292)
++++ src/test/java/Addition.java	(date 1635597369292)
+@@ -0,0 +1,6 @@
++public class Addition {
++    public static int add(int number1, int number2)
++    {
++        return number1+number2;
++    }
++}
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/jarRepositories.xml	(date 1635597160461)
++++ .idea/jarRepositories.xml	(date 1635597160461)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+diff --git target/test-classes/AdditionTest.class target/test-classes/AdditionTest.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..376de1b4b7f8a706607d5b3ebe04aa6d10d023ab
+GIT binary patch
+literal 642
+zc${64%}(1u6ot<?jt3l<IQ;*XKsUewtLp+HLLfzoK%yv8yPL$LFp;s<vCYHq3~ahe
+z)k?7MLsi@vjEFjmxpVK_^WCGFzyE$e0r-qhJ~-BWY+%!ehb@keK3uGGY;&|3yd#yW
+z;)J2Lx8G-Q&$3uDG<zzQm*w3+>Kidgs50Nnh9c<;txR4O-Qrf|40F9s9IHZQ>5a^b
+zFT@gYOlU3hGAS5Xmw^v6t>uuiwd*o1)Sc|BToI*{rdc73m`GtS)1zoylBK9(dGbdo
+z61uDJb-VlDiKZC*uUV;w@<JIGt?B89V{tD6%wU#dCqNUs0hX}Luxc)%M5Lprljl+!
+z!MWC%W(cMMWa7Q^YB08*XWlw08(r+sV{({P12f}j_bH1gGK%$s3D{3MIB3xB*&>ai
+zJ$P-v2h7=8lf;e{j|f(yxD|T*7o4NeKRyWkjR|TGX#9cuZG!sqJ9M5t(ttSO%{On7
+z4>O?s3aJKgEF(nA`dc7Pi_{C1rA5o4_o>{UQZ!n}ef-aQV~XrlWOG`vWOE8FnI76^
+FYcF|sYCQk|
+
+diff --git target/test-classes/Addition.class target/test-classes/Addition.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..50021122eb0f963a9e63fa6625a96ce79d006607
+GIT binary patch
+literal 357
+zc${5NO-sW-5Pg$w5*u4v>&HP)-dYcadJ+^t1R)Ugp!Dn}yXcm<ftdQMym%5k_yhb=
+z;_TKUxQBT&Z{B;uetmy@0+?baK?kE4TQRl?(V4NPJtuU=lNmu=)=Cowxv~0s@l@#M
+zP8Jn2qr5I<HIt2T^DimdNApZb@(ZO*YifJSIZ`P?IL@+3Mu@EsnG)!4I%dmly=Y2(
+zWn4^uWj~tB7ukbANLX8ugrTF;O4^6?rkLxp#Q_5TgnI$V>A6NcrHsTF9=?O#{5s|u
+wd6F}^_Lc&4kuY|#?ipu3VRgVL_V({z|9OS??k@M}W5XX87;xuK4!wT!2ZF~rwEzGB
+

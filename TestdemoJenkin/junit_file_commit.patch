@@ -1,0 +1,183 @@
+Index: TestdemoJenkin/.idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/.idea/compiler.xml	(date 1635597160227)
++++ TestdemoJenkin/.idea/compiler.xml	(date 1635597160227)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="TestdemoJenkin" />
++      </profile>
++    </annotationProcessing>
++  </component>
++</project>
+\ No newline at end of file
+Index: TestdemoJenkin/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/.idea/vcs.xml	(date 1635597091915)
++++ TestdemoJenkin/.idea/vcs.xml	(date 1635597091915)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: TestdemoJenkin/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/.idea/misc.xml	(date 1635597091899)
++++ TestdemoJenkin/.idea/misc.xml	(date 1635597091899)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: TestdemoJenkin/TestdemoJenkin.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/TestdemoJenkin.iml	(date 1635597160086)
++++ TestdemoJenkin/TestdemoJenkin.iml	(date 1635597160086)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: TestdemoJenkin/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/pom.xml	(date 1635598961157)
++++ TestdemoJenkin/pom.xml	(date 1635598961157)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>TestdemoJenkin</artifactId>
++    <version>1.0-SNAPSHOT</version>
++    <dependencies>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>RELEASE</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++
++</project>
+\ No newline at end of file
+Index: TestdemoJenkin/src/test/java/AdditionTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/src/test/java/AdditionTest.java	(date 1635599482796)
++++ TestdemoJenkin/src/test/java/AdditionTest.java	(date 1635599482796)
+@@ -0,0 +1,15 @@
++public class AdditionTest {
++
++    @org.junit.Test
++    public void add() {
++        int result=Addition.add(6,4);
++        int correct= 10;
++        if (!equals(10, result)) throw new AssertionError();
++    }
++
++    private boolean equals(int i, int result) {
++        return true;
++    }
++
++
++}
+\ No newline at end of file
+Index: TestdemoJenkin/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/.idea/.gitignore	(date 1635597096743)
++++ TestdemoJenkin/.idea/.gitignore	(date 1635597096743)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: TestdemoJenkin/src/test/java/Addition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/src/test/java/Addition.java	(date 1635597369292)
++++ TestdemoJenkin/src/test/java/Addition.java	(date 1635597369292)
+@@ -0,0 +1,6 @@
++public class Addition {
++    public static int add(int number1, int number2)
++    {
++        return number1+number2;
++    }
++}
+Index: TestdemoJenkin/.idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TestdemoJenkin/.idea/jarRepositories.xml	(date 1635597160461)
++++ TestdemoJenkin/.idea/jarRepositories.xml	(date 1635597160461)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
